@@ -10,6 +10,7 @@ const Home = () => import('@/pages/Home.vue');
 const Departments = () => import('@/pages/Departments.vue');
 const DepartmentDetail = () => import('@/pages/DepartmentDetail.vue');
 const NotFound = () => import('@/pages/NotFound.vue');
+const AddDepartment = () => import('@/pages/AddDepartment.vue');
 
 const router = createRouter({
   // HTML 5 모드
@@ -30,6 +31,8 @@ const router = createRouter({
     {path: '/departments', name:'departments', component: Departments},
     // 동적 라우트
     {path: '/departments/:no', name:'departments/no', component: DepartmentDetail},
+    {path: '/departments/add', name:'departments/add', component: AddDepartment},
+
     // 404 라우트
     {path: '/:paths(.*)*', name: 'notfound', component: NotFound}
   ]

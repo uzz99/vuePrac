@@ -15,6 +15,9 @@
                     학과 상세 조회
                 </RouterLink>
             </li> -->
+            <li class="nav-item">
+                <RouterLink class="nav-link" :to="{name: 'departments/add'}">학과 등록</RouterLink>
+            </li>
         </ul>
 
         <!-- <ul class="nav">
